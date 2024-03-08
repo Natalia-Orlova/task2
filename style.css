@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 3% 2% 0;
+  background-color: #252525;
+  background-image: url("img/noise-a4889168.webp");
+  background-size: cover;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #252525;
+  opacity: 0.5;
+  text-shadow: 1px 10px 20px #888686;
+  font-size: 72px;
+  font-weight: 700;
+}
+
+.item {
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.item-parent {
+  width: 32%;
+}
+
+.item-1 {
+  background-image: url("img/power-295f4ff2.webp");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+.item-1__text-1 {
+  text-transform: uppercase;
+}
+.item-1__text-2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: radial-gradient(rgb(255, 255, 255), rgb(88, 87, 87));
+}
+
+.item-2 {
+  background-color: #1a1919;
+}
+.item-2__text-1 {
+  text-transform: uppercase;
+}
+.item-2__text-2 {
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+}
+.item-2__text-2::after {
+  position: absolute;
+  z-index: 1;
+  bottom: -22px;
+  display: block;
+  content: "700 mAh";
+  transform: scaleY(-1);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, rgb(209, 207, 207), rgb(22, 22, 22));
+}
+
+.item-1,
+.item-2 {
+  min-height: 180px;
+}
+
+.item-3 {
+  width: 60%;
+  min-height: 400px;
+  background-image: url("img/featureImage.webp");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+
+.item-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.item-4 {
+  width: 65%;
+  min-height: 180px;
+  background-image: url("img/material-2ec1aae1.svg");
+  background-position: top;
+  background-size: cover;
+}
+.item-4__text-1 {
+  text-transform: uppercase;
+}
+.item-4__text-2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.item-5 {
+  width: 32%;
+  min-height: 180px;
+  background-image: url("img/resistance-53c498f7.svg");
+  background-position: center;
+  background-size: cover;
+}
+.item-5__text-1 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.item-5__text-2 {
+  font-size: 32px;
+  font-weight: 700;
+  filter: blur(1px);
+}
+
+.text {
+  margin: 0 auto;
+  max-width: 50%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 60px;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, rgb(209, 207, 207), rgb(68, 67, 67));
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .title {
+    font-size: 56px;
+  }
+  .item-parent {
+    width: 100%;
+  }
+  .item-bottom {
+    flex-wrap: wrap;
+  }
+  .item-1,
+  .item-2,
+  .item-3,
+  .item-4,
+  .item-5 {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+}/*# sourceMappingURL=style.css.map */
